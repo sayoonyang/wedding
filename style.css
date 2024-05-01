@@ -78,5 +78,6 @@ h1, h2, h4 {
 }
 
 .root_daum_roughmap_landing {
+        width : 80% !important;
         margin: auto !important;
     }

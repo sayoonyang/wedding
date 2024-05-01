@@ -150,25 +150,39 @@
         <h4><i class="fa-solid fa-signs-post"></i></h4>
         <h2><br></h2>
         <h2>오시는 길</h2>
+        <h2><br></h2>
 
-        <div class="location_map">
-          <!-- * 카카오맵 - 지도퍼가기 -->
-          <!-- 1. 지도 노드 -->
-          <div id="daumRoughmapContainer1714556041401" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <div class="map_top col-md p-5">
 
-          <!-- 2. 설치 스크립트 -->
-          <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+          <div class="location_map">
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div id="daumRoughmapContainer1714556041401" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-          <!-- 3. 실행 스크립트 -->
-          <script charset="UTF-8">
-          new daum.roughmap.Lander({
-            "timestamp" : "1714556041401",
-            "key" : "2j7v2",
-            "mapWidth" : "80%",
-            "mapHeight" : "360"
-          }).render();
-          </script>
+            <!-- 2. 설치 스크립트 -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              "timestamp" : "1714556041401",
+              "key" : "2j7v2",
+              "mapWidth" : "80%",
+              "mapHeight" : "360"
+            }).render();
+            </script>
+          </div>
+
         </div>
+
+        <div class="map_bottom col-md p-5">
+
+          <h4>서울 용산구 한강대로 366<br>포포인츠 바이 쉐라톤 서울역 19층 더이터리</h4>
+          <p class="lead">서울역 12번 출구</p>
+
+        </div>
+
+
 
 
       </div>
