@@ -77,6 +77,6 @@ h1, h2, h4 {
   border-bottom : 1px solid #4e4e4e;
 }
 
-.location_map{
-  margin : auto;
-}
+.root_daum_roughmap {
+        margin: auto !important;
+    }
