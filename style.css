@@ -23,6 +23,9 @@ h1, h2, h4 {
   color : #6c757d;
 }
 
+mark{
+  background-color : #CCD5AE;
+}
 
 .row {
   border-bottom : 0.25pt solid #4e4e4e;
@@ -39,6 +42,8 @@ h1, h2, h4 {
   background-color : #CCD5AE;
 }
 
+
+
 .img_circle {
   border-top-left-radius : 1000px;
   border-top-right-radius : 1000px;
@@ -47,6 +52,8 @@ h1, h2, h4 {
 
 .colored{
   background-color : #FAEDCD;
+  margin : 0 auto !important;
+  width: 100%;
 }
 
 .stories {
@@ -77,7 +84,33 @@ h1, h2, h4 {
   border-bottom : 1px solid #4e4e4e;
 }
 
+.gform{
+  width : 90%;
+  margin : auto;
+}
+
+.form-control{
+  border : solid 1px #4e4e4e;
+}
+
+.submitbtn{
+  width:100%;
+}
+
+.thankyou_message{
+  background : #CCD5AE;
+  border-radius : 5px;
+}
+
+.thankyou_message p{
+  margin-bottom : 0 !important;
+}
+
+.map_image {
+  width : 90%;
+}
+
 .root_daum_roughmap_landing {
-        width : 80% !important;
         margin: auto !important;
+        width : 80% !important;
     }
