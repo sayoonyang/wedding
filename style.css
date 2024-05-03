@@ -42,7 +42,7 @@ h6{
 }
 
 .rsvpform{
-  border-left : 1px solid #4e4e4e;
+  border-left : 1px dotted #4e4e4e;
 }
 
 @media screen and (max-width: 796px){
@@ -72,6 +72,10 @@ h6{
     font-size : 1.1rem;
   }
 
+  h4.form_info{
+    font-size : 1rem;
+  }
+
   h5{
     font-size : 0.9rem;
   }
@@ -81,7 +85,7 @@ h6{
   }
 
   .rsvpform{
-    border-left : 0px solid #4e4e4e;
+    border-left : 0px dotted #eeeeee;
     background-color : #FAEDCD;
   }
 
@@ -113,9 +117,9 @@ mark{
 }
 
 .header_bottom {
-  border-top-left-radius: 1000px;
-  border-top-right-radius: 1000px;
-  background-clip: content-box;
+  border-top-left-radius: 1500px;
+  border-top-right-radius: 1500px;
+  background-clip: padding-box;
   background-color : #CCD5AE;
 }
 
@@ -162,6 +166,10 @@ footer{
 
 .story_title {
   color : #4e4e4e;
+}
+
+.card-header.first-header{
+  border-top : 1px solid #4e4e4e;
 }
 
 .card-body{

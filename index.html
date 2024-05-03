@@ -48,7 +48,7 @@
         </div>
 
         <div class="header_bottom col-md pt-5">
-          <div class="text-center pt-4 mt-5">
+          <div class="text-center pt-2 mt-4">
             <img class="img_circle mb-5" src="images/img_1.png">
             <h1> 홍석오 & 양사윤 </h1>
             <p class="lead">Seokoh Hong & Sayoon Yang</p>
@@ -114,7 +114,7 @@
     <div class="col-md pt-4 colored text-center">
       <div class="invisible_div pt-1"></div>
       <h2><i class="fa-regular fa-paper-plane"></i></h2>
-      <div class="invisible_div pt-5"></div>
+      <div class="invisible_div pt-3"></div>
       <h2>참석의사 전달하기</h2>
       <div class="invisible_div pt-3"></div>
       <p class="lead pt-2"><mark><strong>8월 20일까지 참석여부</strong></mark>를 알려주세요.
@@ -135,21 +135,21 @@
 
                 <tr>
                   <div class="box-input">
-                    <td><label for="userName"><h4><i class="fa-solid fa-person fa-fw invisible_div"></i> 성함</h4></label></td>
+                    <td><label for="userName"><h4 class="form_info"><i class="fa-solid fa-person fa-fw invisible_div"></i> 성함</h4></label></td>
                     <td><input type="text" class="form-control" id="userName" name="name" placeholder="성함을 알려주세요." oninvalid="this.setCustomValidity('여기에 성함을 작성해주세요.')" oninput="setCustomValidity('')" required></td>
                   </div>
                 </tr>
 
                 <tr>
                   <div class="box-input">
-                    <td><label for="userEmail"><h4><i class="fa-solid fa-phone fa-fw invisible_div"></i> 연락처</h4></label></td>
+                    <td><label for="userEmail"><h4 class="form_info"><i class="fa-solid fa-phone fa-fw invisible_div"></i> 연락처</h4></label></td>
                     <td><input type="text" class="form-control" id="userName" name="email" placeholder="000-0000-0000" oninvalid="this.setCustomValidity('여기에 연락처를 남겨주세요.')" oninput="setCustomValidity('')" required></td>
                   </div>
                 </tr>
 
                 <tr>
                   <div class="box-input">
-                    <td><label for="userMessage"><h4><i class="fa-solid fa-person-circle-plus fa-fw invisible_div"></i> 동행인 <span class="invisible_div">성함</span></h4></label></td>
+                    <td><label for="userMessage"><h4 class="form_info"><i class="fa-solid fa-person-circle-plus fa-fw invisible_div"></i> 동행인 <span class="invisible_div">성함</span></h4></label></td>
                     <td><input type="text" name="message" class="form-control" id="userMessage" placeholder="동행의 성함을 알려주세요." ></input></td>
                   </div>
                 </tr>
@@ -177,12 +177,12 @@
         <h2><i class="fa-solid fa-book-open"></i></h2>
         <div class="invisible_div pt-2"></div>
         <h2>우리의 이야기</h2>
-        <div class="invisible_div pt-3"></div>
+        <div class="pt-4"></div>
 
         <div class="accordion text-left" id="stories">
 
           <div class="card card-default stories active">
-            <div class="card-header" id="headingOne">
+            <div class="card-header first-header" id="headingOne">
               <h4 class="story_title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <i class="fa-solid fa-angle-right"></i>  이야기가 담긴 유쾌한 디자인
               </h4>
@@ -406,13 +406,9 @@
         </div>
 
       <div class="row default">
-        <div class="map_top text-center col-md p-5">
-          <img class="map_image" src="images/map.jpg">
-          <div class="pt-3"></div>
-          <a type="button" class="btn btn-dark" href="images/map.jpg" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> 약도 크게 보기</a>
-        </div>
+        <div class="map_top text-center col-md">
 
-        <div class="map_bottom text-center col-md">
+
           <div class="invisible_div pt-5"></div>
           <div class="quote-text mb-5">
             <h4><i class="fa-solid fa-location-dot"></i></h4>
@@ -432,6 +428,15 @@
             <div class="lead"><i class="fa-solid fa-truck-plane fa-fw"></i> <strong>공항철도 • KTX</strong> 서울역</div>
             <div class="lead"><i class="fa-solid fa-bus fa-fw"></i> <strong>버스</strong> 서울역 버스 환승센터</div>
           </div>
+
+        </div>
+
+        <div class="map_bottom text-center col-md pb-5">
+
+          <img class="map_image" src="images/map.jpg">
+          <div class="pt-3"></div>
+          <a type="button" class="btn btn-dark" href="images/map.jpg" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> 약도 크게 보기</a>
+
 
         </div>
       </div>
