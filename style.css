@@ -4,12 +4,34 @@ body {
   background-color : #f6f6ea;
 }
 
+
+
 h1, h2, h4 {
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
   font-style: normal;
   color : #4e4e4e;
+  line-height : 1.4 !important;
 }
+
+
+
+h5 {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 200;
+  font-style: normal;
+  color : #6c757d;
+  line-height : 1.6 !important;
+}
+
+h6{
+  font-family: "Noto Serif KR", serif;
+  font-weight: 200;
+  font-style: normal;
+  color : #4e4e4e;
+  line-height : 1.8 !important;
+}
+
 
 .display-2{
   color : #4e4e4e;
@@ -19,15 +41,70 @@ h1, h2, h4 {
   color : #ccc5b9;
 }
 
+.rsvpform{
+  border-left : 1px solid #4e4e4e;
+}
+
+@media screen and (max-width: 796px){
+  .display-2{
+    font-size : 3rem;
+    text-align : center;
+  }
+
+  .display-4{
+    font-size : 2.2rem;
+    text-align : center;
+  }
+
+  .lead{
+    font-size : 1rem;
+  }
+
+  h1{
+    font-size : 2rem;
+  }
+
+  h2{
+    font-size : 1.8rem;
+  }
+
+  h4{
+    font-size : 1.1rem;
+  }
+
+  h5{
+    font-size : 0.9rem;
+  }
+
+  .invisible_div{
+    display : none;
+  }
+
+  .rsvpform{
+    border-left : 0px solid #4e4e4e;
+    background-color : #FAEDCD;
+  }
+
+}
+
 .lead{
   color : #6c757d;
 }
 
-mark{
-  background-color : #CCD5AE;
+h5.cover_text{
+  color : #ffffff;
 }
 
-.row {
+mark{
+  background-color : #CCD5AE;
+  border-radius : 8px;
+}
+
+.oneline p, .oneline h4{
+  display: inline;
+}
+
+.row.default {
   border-bottom : 0.25pt solid #4e4e4e;
 }
 
@@ -42,12 +119,34 @@ mark{
   background-color : #CCD5AE;
 }
 
+footer{
+  background-color : #4e4e4e;
+}
 
+.footer_text{
+  color : #dad7cd !important;
+}
 
 .img_circle {
+  border-radius : 1000px;
+  width : 65%;
+}
+
+.img_door {
   border-top-left-radius : 1000px;
   border-top-right-radius : 1000px;
-  width : 200px;
+  width : 70%;
+}
+
+
+.img_story{
+  border-radius : 20px;
+  filter: grayscale(1) brightness(0.8);
+  transition: 0.3s linear;
+}
+
+.img_story:hover {
+  filter: grayscale(0);
 }
 
 .colored{
@@ -65,6 +164,9 @@ mark{
   color : #4e4e4e;
 }
 
+.card-body{
+  border-bottom : 1px solid #4e4e4e;
+}
 
 .fa-angle-right {
   transition: .3s transform ease-in-out;
@@ -107,10 +209,59 @@ mark{
 }
 
 .map_image {
+  border-radius : 20px;
   width : 90%;
 }
 
 .root_daum_roughmap_landing {
         margin: auto !important;
         width : 80% !important;
+    }
+
+
+/* for gallery */
+
+    .row.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4px;
+      padding-left : 15px;
+      padding-right : 10px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 20%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      filter: grayscale(1) brightness(0.8);
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s linear;
+    }
+    .column img:hover {
+      filter: grayscale(0);
+    }
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+      .column img {
+        filter: grayscale(0) brightness(1);
+      }
     }
