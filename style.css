@@ -190,10 +190,11 @@ footer{
 }
 
 .fa-angle-right {
+  transform : rotate(90deg);
   transition: .3s transform ease-in-out;
 }
 .story_title.collapsed .fa-angle-right {
-  transform : rotate(90deg);
+  transform : rotate(0deg);
 
 }
 
@@ -300,17 +301,17 @@ footer{
 
 .container_mouse .mouse-btn {
   margin: 10px auto;
-  width: 40px;
-  height: 80px;
-  border: 4px solid rgba(122, 122, 124, 0.918);
+  width: 30px;
+  height: 60px;
+  border: 2px solid rgba(122, 122, 124, 0.918);
   border-radius: 30px;
   display: flex;
 }
 
 .container_mouse .mouse-btn .mouse-scroll {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
   border-radius: 50%;
   margin: auto;
@@ -328,4 +329,83 @@ footer{
     opacity: 1;
     transform: translateY(20px);
   }
+}
+
+.outer {
+  width: 1px;
+  height: 7%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: grey;
+  top: 30%;
+  box-shadow: 0px 0px 30px 20px grey;
+}
+
+/* for fade in */
+
+@-webkit-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+@-moz-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+
+.fadeindiv {
+    opacity: 0;
+    -webkit-animation: fading ease-in 1s;
+    animation: fading ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fadeindiv.one {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s
+}
+
+.fadeindive.two {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s
+}
+
+.fadeindiv.three {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.fadeindiv.four {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.fadeindiv.five {
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
 }
