@@ -107,6 +107,13 @@ h6{
     background-color : #FAEDCD;
   }
 
+  .map_image_mobile{
+    border-radius : 20px;
+    width : 90%;
+    margin : auto;
+
+  }
+
 }
 
 .lead{
@@ -237,7 +244,7 @@ footer{
 
 .map_image {
   border-radius : 20px;
-  width : 90%;
+  width : 70%;
 }
 
 .root_daum_roughmap_landing {
