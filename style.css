@@ -198,6 +198,11 @@ footer{
 
 }
 
+.story_small{
+  font-family : sans-serif;
+  color : #2C6E49;
+}
+
 .accordion {
   width : 90%;
   margin : auto;
@@ -242,6 +247,11 @@ footer{
 
 
 /* for gallery */
+
+    .gallery_title{
+      width : 100%;
+      border-radius : 20px;
+    }
 
     .row.gallery {
       display: flex;
