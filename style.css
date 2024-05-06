@@ -156,6 +156,15 @@ footer{
   color : #dad7cd !important;
 }
 
+.badge a{
+  text-decoration : none;
+  color : #4e4e4e;
+}
+
+.badge a:hover{
+  color : #aaaaaa;
+}
+
 .img_circle {
   border-radius : 1000px;
   width : 65%;
@@ -168,7 +177,7 @@ footer{
 }
 
 
-.img_story{
+.carousel-inner{
   border-radius : 20px;
 }
 
@@ -248,105 +257,105 @@ footer{
 }
 
 .root_daum_roughmap_landing {
-        margin: auto !important;
-        width : 80% !important;
-    }
+  margin: auto !important;
+  width : 80% !important;
+}
 
 
 /* for gallery */
 
-    .gallery_title{
-      width : 100%;
-      border-radius : 20px;
-    }
+.gallery_title{
+  width : 100%;
+  border-radius : 20px;
+}
 
-    .row.gallery {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 4px;
-      padding-left : 15px;
-      padding-right : 10px;
-    }
+.row.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+  padding-left : 15px;
+  padding-right : 10px;
+}
 
-    /* Create four equal columns that sits next to each other */
-    .column {
-      flex: 20%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
-      filter: grayscale(1) brightness(0.8);
-      border-radius: 20px;
-      cursor: pointer;
-      transition: 0.3s linear;
-    }
-    .column img:hover {
-      filter: grayscale(0);
-    }
-    @media screen and (max-width: 800px) {
-      .column {
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.8);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.column img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        flex: 50%;
-        max-width: 50%;
-      }
-      .column img {
-        filter: grayscale(0) brightness(1);
-      }
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .column img {
+    filter: grayscale(0) brightness(1);
+    }
+  }
+
+  .container_mouse {
+    text-align: center;
+    color: rgba(122, 122, 124, 0.918);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+
+  .container_mouse .mouse-btn {
+    margin: 10px auto;
+    width: 30px;
+    height: 60px;
+    border: 2px solid rgba(122, 122, 124, 0.918);
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .container_mouse .mouse-btn .mouse-scroll {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling 1s linear infinite;
+  }
+
+  @keyframes scrolling {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
     }
 
-
-
-    .container_mouse {
-  text-align: center;
-  color: rgba(122, 122, 124, 0.918);
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-top: 2rem;
-  cursor: pointer;
-}
-
-.container_mouse .mouse-btn {
-  margin: 10px auto;
-  width: 30px;
-  height: 60px;
-  border: 2px solid rgba(122, 122, 124, 0.918);
-  border-radius: 30px;
-  display: flex;
-}
-
-.container_mouse .mouse-btn .mouse-scroll {
-  display: block;
-  width: 17px;
-  height: 17px;
-  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
-  border-radius: 50%;
-  margin: auto;
-  animation: scrolling 1s linear infinite;
-}
-
-
-@keyframes scrolling {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
   }
-
-  100% {
-    opacity: 1;
-    transform: translateY(20px);
-  }
-}
 
 .outer {
   width: 1px;
@@ -355,6 +364,7 @@ footer{
   position: relative;
   overflow: hidden;
 }
+
 .inner {
   position: absolute;
   width:100%;
@@ -367,39 +377,40 @@ footer{
 /* for fade in */
 
 @-webkit-keyframes fading {
-    from {
-        opacity: 0;
-    }
-    to {
-         opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 @-moz-keyframes fading {
-    from {
-        opacity: 0;
-    }
-    to {
-         opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fading {
-    from {
-        opacity: 0;
-    }
-    to {
-         opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeindiv {
-    opacity: 0;
-    -webkit-animation: fading ease-in 1s;
-    animation: fading ease-in 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+  opacity: 0;
+  -webkit-animation: fading ease-in 1s;
+  animation: fading ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .fadeindiv.one {
@@ -408,21 +419,21 @@ footer{
 }
 
 .fadeindive.two {
-    -webkit-animation-delay: 1.2s;
-    animation-delay: 1.2s
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s
 }
 
 .fadeindiv.three {
-    -webkit-animation-delay: 1.4s;
-    animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
 
 .fadeindiv.four {
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .fadeindiv.five {
-    -webkit-animation-delay: 1.8s;
-    animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
