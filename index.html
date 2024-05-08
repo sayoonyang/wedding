@@ -498,7 +498,7 @@
           </div>
         </div>
 
-      <div class="row default">
+      <div class="row default end">
         <div class="map_top text-center col-md">
 
 
@@ -564,7 +564,7 @@
         </div>
 
         <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">신랑측 계좌번호</h4>
@@ -573,8 +573,18 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <span><h6><small>혼주</small> 윤종옥 </span> <small><mark>ㅇㅇ은행</mark></small> <span>00000000000000</h6></span>
-                  <span><h6><small>신랑</small> 홍석오 </span> <small><mark>하나은행</mark></small> <span>455-910238-48707</h6></span>
+                  <div class="oneline">
+                    <h6><small>혼주</small> 윤종옥 </h6>
+                      <small><mark> &nbsp;ㅇㅇ은행 </mark>&nbsp;<p id="p1">00000000000000</p></small>
+                  <button type="button" class="btn btn-light btn-sm" onclick="copyToClipboard('#p1')">복사하기</button>
+                  </div>
+                  <hr>
+                  <div class="oneline">
+                    <h6><small>신랑</small> 홍석오 </h6>
+                        <small><mark> &nbsp;하나은행 </mark>&nbsp;<p id="p2">455-910238-48707</p></small>
+                  <button type="button" class="btn btn-light btn-sm" onclick="copyToClipboard('#p2')">복사하기</button>
+                  </div>
+                  <hr>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-dark" data-dismiss="modal">창 닫기</button>
@@ -584,7 +594,7 @@
           </div>
 
           <div class="modal fade" id="brideModal" tabindex="-1" role="dialog" aria-labelledby="brideModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title" id="myModalLabel">신부측 계좌번호</h4>
@@ -592,9 +602,19 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body quote">
-                    <span><h6><small>혼주</small> 양진만 </span> <small><mark>하나은행</mark></small> <span>020-19-17688-4</h6></span>
-                    <span><h6><small>신부</small> 양사윤 </span> <small><mark>신한은행</mark></small> <span>110-222-674780</h6></span>
+                  <div class="modal-body">
+                    <div class="oneline">
+                      <h6><small>혼주</small> 양진만 </h6>
+                        <small><mark> &nbsp;하나은행 </mark>&nbsp;<p id="p3">020-19-17688-4</p></small>
+                    <button type="button" class="btn btn-light btn-sm" onclick="copyToClipboard('#p3')">복사하기</button>
+                    </div>
+                    <hr>
+                    <div class="oneline">
+                      <h6><small>신부</small> 양사윤 </h6>
+                        <small><mark> &nbsp;신한은행 </mark>&nbsp;<p id="p4">110-222-674780</p></small>
+                    <button type="button" class="btn btn-light btn-sm" onclick="copyToClipboard('#p4')">복사하기</button>
+                    </div>
+                    <hr>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-dismiss="modal">창 닫기</button>
@@ -635,6 +655,7 @@
     <!-- Swipe jQuery-->
     <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="swipescript.js"></script>
+    <script type="text/javascript" src="copytext.js"></script>
 
   </body>
 </html>
