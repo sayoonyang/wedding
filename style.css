@@ -49,6 +49,20 @@ h6{
   display : none;
 }
 
+.nav-tabs {
+  border-bottom : none;
+}
+
+.nav-item, .nav-link.active{
+  border : none;
+  border-radius : 25px;
+}
+
+.nav-link, .nav-link:hover {
+  color : #4e4e4e;
+  border-radius : 25px;
+}
+
 @media screen and (max-width: 796px){
   .display-2{
     font-size : 1.8rem;
